@@ -50,6 +50,12 @@ header li:hover{
     margin: 10px 30px 0 30px;
 }
 
+.inputValue{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
 .convert{
     display: flex;
     gap: 20px;
