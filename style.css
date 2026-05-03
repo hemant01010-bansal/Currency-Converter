@@ -1,0 +1,116 @@
+/*make with only three colors blue, black and white*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header{
+    font-family: "Delius", cursive;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-bottom: 2px solid black;
+}
+
+header li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 7px;
+    border: 0px white solid;
+    border-radius: 5px;
+}
+
+header li:hover{
+    background-color: rgb(220, 226, 230);
+}
+
+.headerLinks{
+    display: flex;
+    gap: 25px;
+}
+
+.parent{
+    min-height: calc(100vh - 72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(255,255,255),rgb(255,255,255),rgb(238, 240, 238));
+}
+
+.container{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.container form{
+    margin: 10px 30px 0 30px;
+}
+
+.convert{
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+
+.convert i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s linear;
+}
+
+.convert i:hover{
+    transform: rotate(180deg);
+    text-shadow: 2px 2px 4px rgb(72, 72, 70);
+}
+
+.from img{
+    height: 40px;
+    width: 40px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.to img{
+    height: 40px;
+    width: 40px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.selectContainer{
+    display: flex;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.selectContainer select{
+    border: none;
+    margin-right: 1.5px;
+    cursor: pointer;
+}
+
+.getResult{
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color: rgb(234, 238, 240);
+}
+
+.getResult:hover{
+    background-color: rgb(220, 226, 230);
+    text-shadow: 1px 1px 1px rgb(72, 72, 70),1px 1px 1px rgb(72, 72, 70);
+}
+
+.result{
+    padding: 14px 0 14px 4px;
+}

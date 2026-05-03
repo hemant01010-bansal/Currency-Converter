@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange rates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Delius&family=Delius+Swash+Caps&family=Knewave&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <li>Currency Converter</li>
+        <div class="headerLinks">
+            <li>Help</li>
+            <li>About</li>
+        </div>
+    </header>
+
+    <div class="parent">
+        <div class="container">
+            <form>
+                <label>Enter Amount<br>
+                    <input type="number" placeholder="Enter amount" class="inputValue">
+                </label>
+            </form>
+            <div class="convert">
+                <div class="from">
+                    <h2>From</h2>
+                    <div class="selectContainer">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select></select>
+                    </div>
+                </div>
+            
+                <i class="fa-solid fa-arrow-right-arrow-left" style="color: rgb(15, 31, 43);" onclick="rotater()"></i>
+            
+                <div class="to">
+                    <h2>To</h2>
+                    <div class="selectContainer">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <button class="getResult" type="button">Get Exchange Rate</button>
+            <p class="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
