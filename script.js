@@ -193,6 +193,7 @@ async function calcuExchangeRate(){
     let response=await fetch(`https://fxapi.app/api/${fromCurrCode}/${toCurrCode}.json`);
     let data=await response.json();
     let calcValue=value*data.rate;
+    calcValue=calcValue.toFixed(2);
     result.innerText=`${value} ${fromCurrCode} = ${calcValue} ${toCurrCode}`;
 }
 
