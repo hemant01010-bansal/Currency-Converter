@@ -188,6 +188,11 @@ const updateFlag=(element)=>{
 async function calcuExchangeRate(){
     let value=document.querySelector(".inputValue").value;
     let result=document.querySelector(".result");
+    if (!value || value<=0){
+        result.innerText=`Please enter a valid number.`;
+        return;
+    }
+    console.log(value);
     let fromCurrCode=document.querySelector(".from .selectContainer select").value;
     let toCurrCode=document.querySelector(".to .selectContainer select").value;
     let response=await fetch(`https://fxapi.app/api/${fromCurrCode}/${toCurrCode}.json`);
@@ -198,7 +203,6 @@ async function calcuExchangeRate(){
 }
 
 let getResult=document.querySelector(".getResult");
-console.log(getResult);
 getResult.addEventListener("click",calcuExchangeRate);
 
 const rotater=()=>{
@@ -212,5 +216,7 @@ const rotater=()=>{
     let toimg=document.querySelector(".to .selectContainer img");
     fromimg.src=`https://flagsapi.com/${toCountryCode}/flat/64.png`;
     toimg.src=`https://flagsapi.com/${fromCountryCode}/flat/64.png`;
+    let temp=document.querySelector(".from .selectContainer select").value;
+    document.querySelector(".from .selectContainer select").value=document.querySelector(".to .selectContainer select").value;
+    document.querySelector(".to .selectContainer select").value=temp;
 }
-console.log(countryList.USD);
