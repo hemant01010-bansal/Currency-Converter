@@ -51,6 +51,7 @@ header li:hover{
 }
 
 .inputValue{
+    width: 95%;
     padding: 5px;
     border: 2px solid black;
     border-radius: 5px;
@@ -74,6 +75,10 @@ header li:hover{
 .convert i:hover{
     transform: rotate(180deg);
     text-shadow: 2px 2px 4px rgb(72, 72, 70);
+}
+
+.convert i:active{
+    text-shadow: 0px 0px;
 }
 
 .from img{
@@ -115,6 +120,10 @@ header li:hover{
 .getResult:hover{
     background-color: rgb(220, 226, 230);
     text-shadow: 1px 1px 1px rgb(72, 72, 70),1px 1px 1px rgb(72, 72, 70);
+}
+
+.getResult:active{
+    text-shadow: 0px 0px;
 }
 
 .result{

@@ -177,6 +177,12 @@ for (select of dropdowns){
 
 }
 
+//add by default countries (USD->INR)
+document.querySelector(".from select").value="USD";
+document.querySelector(".to select").value="INR";
+document.querySelector(".inputValue").value=1;
+calcuExchangeRate();
+
 const updateFlag=(element)=>{
     let currCode=element.value;
     let countryCode=countryList[currCode];
@@ -185,10 +191,11 @@ const updateFlag=(element)=>{
     img.src=newSrc;
 }
 
+//add event listner on button & call when user click on button.
 async function calcuExchangeRate(){
     let value=document.querySelector(".inputValue").value;
     let result=document.querySelector(".result");
-    if (!value || value<=0){
+    if (!value || value<=0){  //if user put no value or the entered value is negative then we print a text.
         result.innerText=`Please enter a valid number.`;
         return;
     }
@@ -202,11 +209,11 @@ async function calcuExchangeRate(){
     result.innerText=`${value} ${fromCurrCode} = ${calcValue} ${toCurrCode}`;
 }
 
-let getResult=document.querySelector(".getResult");
+let getResult=document.querySelector(".getResult");  //'getResult' is class of button of get exchange rate
 getResult.addEventListener("click",calcuExchangeRate);
 
 const rotater=()=>{
-    let fromCurrCode=document.querySelector(".from .selectContainer select").value;
+    let fromCurrCode=document.querySelector(".from .selectContainer select").value;  //rotate images
     let toCurrCode=document.querySelector(".to .selectContainer select").value;
     let fromCountryCode=countryList[fromCurrCode];
     console.log(fromCountryCode);
@@ -216,7 +223,7 @@ const rotater=()=>{
     let toimg=document.querySelector(".to .selectContainer img");
     fromimg.src=`https://flagsapi.com/${toCountryCode}/flat/64.png`;
     toimg.src=`https://flagsapi.com/${fromCountryCode}/flat/64.png`;
-    let temp=document.querySelector(".from .selectContainer select").value;
+    let temp=document.querySelector(".from .selectContainer select").value;  //rotate the values
     document.querySelector(".from .selectContainer select").value=document.querySelector(".to .selectContainer select").value;
     document.querySelector(".to .selectContainer select").value=temp;
 }
