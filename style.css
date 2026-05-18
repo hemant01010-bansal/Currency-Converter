@@ -34,7 +34,7 @@ header li:hover{
 }
 
 .parent{
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 74px);
     display: flex;
     justify-content: center;
     align-items: center;
