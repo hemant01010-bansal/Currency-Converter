@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Centre</title>
     <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,11 +24,31 @@
         <div class="help-sub-title">Connect with our team!</div>
     </div>
 
-    <div class="help">
-        <div class="chatHelp">
+    <div class="helpContainer">
+
+        <div class="chatHelp contact">
+            <div class="HelpPara">
                 <div class="title">Chat with us</div>
                 <div class="sub-title">The quickest way to get in touch. Connect with our team in seconds.</div>
+                <button onclick="window.location.href='https://whatsapp.com'">Chat now <i class="fa-solid fa-arrow-right" style="color: rgb(0,0,0);"></i></button>
+            </div>
+            <img src="/chatWithUs.png" style="box-shadow: none;">
+        </div>
+
+        <div class="callHelp contact">
+            <img src="/GiveUsACall.png">
+            <div class="HelpPara">
+                <div class="title">Give us a call</div>
+                <div class="sub-title">Speak with our team on the phone. Available in English</div>
+                <button>Call now <i class="fa-solid fa-arrow-right" style="color: rgb(28, 31, 33);"></i></button>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <li onclick="window.location.href='index.html'">Go to <i class="fa-regular fa-house" style="color: rgba(24, 34, 81, 0.678);"></i></li>
+        <li onclick="window.location.href='help.html'">Help Centre</li>
+        <li>Blog</li>
+    </footer>
 </body>
 </html>
