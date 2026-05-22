@@ -100,6 +100,34 @@ header li:hover{
     border-radius: 5px;
 }
 
+.stats{
+    /* background-color: rgb(146, 147, 139); */
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 11% 5% 11%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid black;
+}
+
+.stat{
+    width: 160px;
+    padding: 5px 0 5px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.statTitle{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+
+.statSubTitle{
+    text-align: center;
+    color: rgb(53, 52, 52);
+}
+
 @media (max-width: 768px){
     .whatWeDo{
         display: block;
@@ -111,6 +139,16 @@ header li:hover{
     .whatWeDo img{
         width: 320px;
         margin-top: 18px;
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .stat{
+        width: 100%;
     }
 }
 
