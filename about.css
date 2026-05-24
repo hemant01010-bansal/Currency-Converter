@@ -128,6 +128,55 @@ header li:hover{
     color: rgb(53, 52, 52);
 }
 
+
+.featureHead{
+    padding: 0px 11% 15px 11%;
+}
+
+.featuresTitle{
+    font-family: "Story Script", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.featuresSubTitle{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.features{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+
+    display: grid; /*children become grid items*/
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    gap: 14px;
+    padding: 0px 11% 6% 11%;
+}
+
+.feature{
+    /* width: 20%; */
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 16px;
+}
+
+.featureHeading{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.featureP{
+    font-size: 0.85rem;
+    color: rgb(24 34 81);
+}
+
 @media (max-width: 768px){
     .whatWeDo{
         display: block;
