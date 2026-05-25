@@ -181,6 +181,48 @@ header li:hover{
     color: rgb(24 34 81);
 }
 
+
+.back{
+    padding: 0 11% 55px 11%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.backTitle{
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
+.backSubTitle{
+    font-size: 1.1rem;
+    color: rgb(24 34 81);
+}
+
+.backButton{
+    display: flex;
+    justify-content: center;
+}
+
+.backButton button{
+    font-size: 1.1rem;
+    padding: 4px 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(220, 226, 230);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.backButton button:hover{
+    transform: scale(1.05);
+}
+
+.backButton button:active{
+    transform: scale(0.8);
+}
+
 @media (max-width: 768px){
     .whatWeDo{
         display: block;
@@ -202,6 +244,10 @@ header li:hover{
 
     .stat{
         width: 100%;
+    }
+
+    .back{
+        padding-top: 40px;
     }
 }
 
