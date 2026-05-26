@@ -5,6 +5,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+body{
+    padding-top: 72px;
+}
+
             /* Header */
 
 header{
@@ -15,6 +19,12 @@ header{
     padding-left: 28px;
     padding-right: 28px;
     border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
 }
 
 header li{
