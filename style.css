@@ -24,7 +24,8 @@ header{
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: white;
+    z-index: 1000;
+    /* background-color: white; */
 }
 
 header li{
@@ -45,7 +46,7 @@ header li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(rgb(255,255,255),rgb(255,255,255),rgb(238, 240, 238));
+    /* background-image: radial-gradient(rgb(255,255,255),rgb(255,255,255),rgb(238, 240, 238)); */
 }
 
 .container{
