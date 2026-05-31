@@ -259,6 +259,10 @@ header li:hover{
     .back{
         padding-top: 40px;
     }
+
+    .headerLinks{
+        gap: 15px;
+    }
 }
 
 @media (max-width: 380px){
