@@ -121,15 +121,15 @@ header li:hover{
 }
 
 .title{
-    font-size: 30px;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
 .sub-title{
-    color: rgb(24 34 81);
-    font-size: 18px;
+    font-size: 0.95rem;
     font-weight: 300;
     font-family: "Quicksand", sans-serif;
+    color: rgb(24 34 81);
 }
 
 footer{
@@ -152,4 +152,15 @@ footer li{
 
 footer li:hover{
     text-decoration: underline;
+}
+
+
+/* code for responsiveness */
+@media (max-width: 768px){
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
 }
