@@ -153,3 +153,9 @@ header li{
         background-color: rgb(220, 226, 230);
     }
 }
+
+@media (max-width: 768px){
+    .headerLinks{
+        gap: 15px;
+    }
+}
