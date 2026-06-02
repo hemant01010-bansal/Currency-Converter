@@ -227,3 +227,19 @@ const rotater=()=>{
     document.querySelector(".from .selectContainer select").value=document.querySelector(".to .selectContainer select").value;
     document.querySelector(".to .selectContainer select").value=temp;
 }
+
+let changeMode=document.querySelector(".changeMode");
+let mode='white';
+
+changeMode.addEventListener("click",(()=>{
+    document.body.classList.toggle("dark-mode");
+
+    if (mode=='white'){
+        mode='black';
+        changeMode.innerHTML=`<i class="fa-solid fa-sun" style="color: rgb(255, 255, 255);"></i>`;
+    }
+    else{
+        mode='white';
+        changeMode.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(0, 0, 0);"></i>`;
+    }
+}))
