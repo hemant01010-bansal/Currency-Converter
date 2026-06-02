@@ -78,6 +78,7 @@ header li{
     cursor: pointer;
     margin-top: 20px;
     transition: transform 0.2s linear;
+    color: rgb(15, 31, 43);
 }
 
 .convert i:active{
@@ -87,14 +88,12 @@ header li{
 .from img{
     height: 40px;
     width: 40px;
-    border: 1px white solid;
     border-radius: 10px;
 }
 
 .to img{
     height: 40px;
     width: 40px;
-    border: 1px white solid;
     border-radius: 10px;
 }
 
@@ -158,4 +157,51 @@ header li{
     .headerLinks{
         gap: 15px;
     }
+}
+
+
+
+/* css for dark mode*/
+/* this 'body.dark-mode header' means that it's css apply only when body contain .dark-mode class */
+
+
+body.dark-mode{
+    background-color: rgb(13, 17, 23);
+    color: #ffffff;
+}
+
+body.dark-mode header{
+    border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode header li:hover{
+    background-color: #444b45;
+}
+
+body.dark-mode .container{
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode .inputValue{
+    background-color: rgb(13, 17, 23);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode .selectContainer{
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode select{
+    background-color: rgb(13, 17, 23);
+    color: #ffffff;
+}
+
+body.dark-mode .convert i{
+    color: #ffffff;
+}
+
+body.dark-mode .getResult{
+    background-color: #444b45;
+    color: #ffffff;
 }
