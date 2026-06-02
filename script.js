@@ -236,10 +236,10 @@ changeMode.addEventListener("click",(()=>{
 
     if (mode=='white'){
         mode='black';
-        changeMode.innerHTML=`<i class="fa-solid fa-sun" style="color: rgb(255, 255, 255);"></i>`;
+        changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
     }
     else{
         mode='white';
-        changeMode.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(0, 0, 0);"></i>`;
+        changeMode.innerHTML=`<i class="fa-regular fa-lightbulb" style="color: rgb(0, 0, 0);"></i>`;
     }
 }))
