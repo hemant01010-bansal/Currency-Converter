@@ -155,7 +155,7 @@ header li{
 
 @media (max-width: 768px){
     .headerLinks{
-        gap: 15px;
+        gap: 12px;
     }
 }
 
