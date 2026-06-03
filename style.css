@@ -166,7 +166,7 @@ header li{
 
 
 body.dark-mode{
-    background-color: rgb(13, 17, 23);
+    background-color: rgb(5,5,5);
     color: #ffffff;
 }
 
@@ -183,7 +183,7 @@ body.dark-mode .container{
 }
 
 body.dark-mode .inputValue{
-    background-color: rgb(13, 17, 23);
+    background-color: rgb(5,5,5);
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -193,7 +193,7 @@ body.dark-mode .selectContainer{
 }
 
 body.dark-mode select{
-    background-color: rgb(13, 17, 23);
+    background-color: rgb(5,5,5);
     color: #ffffff;
 }
 
