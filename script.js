@@ -231,9 +231,16 @@ const rotater=()=>{
 let changeMode=document.querySelector(".changeMode");
 let mode='white';
 
+let isDark=localStorage.getItem("isDark");
+if (isDark=="true"){
+    document.body.classList.add("dark-mode");
+    mode='black';
+    changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
+}
+
 changeMode.addEventListener("click",(()=>{
     document.body.classList.toggle("dark-mode");
-
+    
     if (mode=='white'){
         mode='black';
         changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
