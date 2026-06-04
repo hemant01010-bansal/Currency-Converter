@@ -237,9 +237,11 @@ changeMode.addEventListener("click",(()=>{
     if (mode=='white'){
         mode='black';
         changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
+        localStorage.setItem("isDark","true");
     }
     else{
         mode='white';
         changeMode.innerHTML=`<i class="fa-regular fa-lightbulb" style="color: rgb(0, 0, 0);"></i>`;
+        localStorage.setItem("isDark","false");
     }
 }))
