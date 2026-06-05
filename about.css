@@ -281,3 +281,68 @@ header li:hover{
         margin-bottom: 40px;
     }
 }
+
+
+/* code for dark mode theme */
+
+body.dark-mode{
+    background-color: rgb(5,5,5);
+    color: #ffffff;
+}
+
+body.dark-mode header{
+    background-color: rgb(5,5,5);
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode header li:hover{
+    background-color: #444b45ef;
+}
+
+body.dark-mode .heroSubtitle{
+    color: rgb(161, 161, 170);
+}
+
+body.dark-mode .whatWeDoPara{
+    color: rgb(161, 161, 170);
+}
+
+body.dark-mode .stats{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .stat{
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode .statSubTitle{
+    color: rgb(161, 161, 170);
+}
+
+body.dark-mode .features{
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .feature{
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode .featureIcon{
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode .featureP{
+    color: rgb(161, 161, 170);
+}
+
+body.dark-mode .backSubTitle{
+    color: rgb(161, 161, 170);
+}
+
+body.dark-mode .backButton button{
+    background-color: #444b45ef;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
