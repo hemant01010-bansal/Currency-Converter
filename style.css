@@ -46,11 +46,51 @@ header li{
     display: none;
 }
 
+.sidebarMenu{
+    display: none;
+}
+
+.blackishEffect{
+    opacity: 0.5;
+}
+
+.open{                  /* we add this class when user click on menu option so that sidebarMenu displayed on screen */
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    box-shadow: 10px 10px #888888;
+}
+
+.closeSidebarMenu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.closeSidebarMenu i{
+    padding: 15px 15px 0px 0px;
+}
+
+.sidebarMenuHeading{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+.sidebarMenuLinks li{
+    padding: 20px 0px 0px 5px;
+    border-radius: 0px;
+    border-bottom: 0.1px solid black;
+}
+
 .headerMenuLinks{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    gap: 25px;
+    gap: 20px;
 }
 
 .parent{
@@ -131,7 +171,6 @@ header li{
 .getResult{
     font-size: 20px;
     width: 100%;
-    background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
