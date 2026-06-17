@@ -42,6 +42,17 @@ header li{
     gap: 25px;
 }
 
+.menu{
+    display: none;
+}
+
+.headerMenuLinks{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 25px;
+}
+
 .parent{
     min-height: calc(100vh - 74px);
     display: flex;
@@ -165,6 +176,15 @@ header li{
 
 @media (max-width: 768px){
     .headerLinks{
+        gap: 12px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .headerMenuLinks{
+        display: none;
         gap: 12px;
     }
 
