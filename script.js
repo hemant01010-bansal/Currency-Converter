@@ -252,3 +252,18 @@ changeMode.addEventListener("click",(()=>{
         localStorage.setItem("isDark","false");
     }
 }))
+
+
+let menu=document.querySelector(".menu");
+let sidebarMenu=document.querySelector(".sidebarMenu");
+let header=document.querySelector("header");
+console.log(header)
+
+function openMenu(){
+    sidebarMenu.classList.add("open");
+}
+
+
+function closeMenu(){
+    sidebarMenu.classList.remove("open");
+}
