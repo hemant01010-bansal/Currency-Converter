@@ -161,19 +161,23 @@ footer li:hover{
 
 /* code for responsiveness */
 @media (max-width: 768px){
-    *{
-        font-size: 18px;
-    }
-
     .contact{
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 20px;
     }
-
+    
     .headerLinks{
         gap: 15px;
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
