@@ -228,27 +228,45 @@ const rotater=()=>{
     document.querySelector(".to .selectContainer select").value=temp;
 }
 
-let changeMode=document.querySelector(".changeMode");
+let changeMode1=document.querySelector(".changeMode1");
+let changeMode2=document.querySelector(".changeMode2");
 let mode='white';
 
 let isDark=localStorage.getItem("isDark");
 if (isDark=="true"){
     document.body.classList.add("dark-mode");
     mode='black';
-    changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
+    changeMode1.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(255, 255, 255);"></i>`;
+    changeMode2.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(255, 255, 255);"></i>`;
 }
 
-changeMode.addEventListener("click",(()=>{
+changeMode1.addEventListener("click",(()=>{
     document.body.classList.toggle("dark-mode");
     
     if (mode=='white'){
         mode='black';
-        changeMode.innerHTML=`<i class="fa-solid fa-lightbulb" style="color: rgb(255, 255, 255);"></i>`;
+        changeMode1.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(255, 255, 255);"></i>`;
         localStorage.setItem("isDark","true");
     }
     else{
         mode='white';
-        changeMode.innerHTML=`<i class="fa-regular fa-lightbulb" style="color: rgb(0, 0, 0);"></i>`;
+        changeMode1.innerHTML=`<i class="fa-regular fa-sun" style="color: rgb(0, 0, 0);"></i>`;
+        localStorage.setItem("isDark","false");
+    }
+}))
+
+
+changeMode2.addEventListener("click",(()=>{
+    document.body.classList.toggle("dark-mode");
+    
+    if (mode=='white'){
+        mode='black';
+        changeMode2.innerHTML=`<i class="fa-regular fa-moon" style="color: rgb(255, 255, 255);"></i>`;
+        localStorage.setItem("isDark","true");
+    }
+    else{
+        mode='white';
+        changeMode2.innerHTML=`<i class="fa-regular fa-sun" style="color: rgb(0, 0, 0);"></i>`;
         localStorage.setItem("isDark","false");
     }
 }))
