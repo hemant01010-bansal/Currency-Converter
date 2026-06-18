@@ -63,6 +63,7 @@ header li{
     right: 0px;
     background-color: white;
     box-shadow: 10px 10px #888888;
+    z-index: 1000;
 }
 
 .closeSidebarMenu{
@@ -81,6 +82,7 @@ header li{
 }
 
 .sidebarMenuLinks li{
+    list-style: none;
     padding: 20px 0px 0px 5px;
     border-radius: 0px;
     border-bottom: 0.1px solid black;
