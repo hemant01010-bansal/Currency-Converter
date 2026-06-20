@@ -283,3 +283,21 @@ function openMenu(){
 function closeMenu(){
     sidebarMenu.classList.remove("open");
 }
+
+// I use Event Listener because i want that when user change input value or change country currency or rotate then value update automatically without prees 'Get Exchange Rate'. I also remove the default behaviour when i was on input tag in website that is when i press enter then page reload so i remove this.
+
+document.querySelector("form").addEventListener('submit',(event)=>{  //this is a EventListener in which when user submit while on input field then i stop default reload 
+    event.preventDefault();
+});
+
+document.addEventListener('input',(event)=>{  //when user change value then i call the function.
+    calcuExchangeRate();
+});
+
+document.querySelector(".parent .container i").addEventListener('click',(event)=>{
+    calcuExchangeRate();
+})
+
+//This is some event listner events on which event listner work.
+    // Use keyup when you want to react only after the key has been fully released
+    // Use keydown when you want to react immediately as the keys goes down
